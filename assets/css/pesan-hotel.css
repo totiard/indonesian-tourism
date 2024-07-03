@@ -1,0 +1,160 @@
+/* CSS styling disini */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  position: relative;
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/33/183/709/texture-textured-portrait-display-vertical-wallpaper-preview.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+header h1 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: "Playwrite IT Moderna", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 50px;
+  text-align: center;
+}
+
+main {
+  padding: 2rem 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  /* Menambahkan overflow: hidden untuk container */
+}
+
+form {
+  background-color: #fff;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+select,
+input[type="date"],
+input[type="file"],
+input[type="number"],
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+#booking-details {
+  display: none;
+  background-color: #fff;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.qris {
+  display: none;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  /* Menambahkan jarak ke bawah */
+  text-align: center;
+}
+
+.qris img {
+  max-width: 100%;
+  max-height: 600px;
+  /* Menambahkan tinggi maksimal gambar */
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.qris p {
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+.payment-proof {
+  display: none;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  font-style: italic;
+  overflow: hidden;
+}
+
+.fleft {
+  float: left;
+  margin-left: 20px;
+  color: #667;
+}
+
+.fright {
+  float: right;
+  margin-right: 20px;
+  color: #667;
+}
+
+.fright span {
+  color: white;
+}

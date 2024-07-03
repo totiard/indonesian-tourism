@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+
+header h1 {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-family: "Playwrite IT Moderna", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 50px;
+  text-align: center;
+}
+
+main {
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  color: #333;
+}
+
+.hotel-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.hotel {
+  width: 30%;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.hotel img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.hotel-info {
+  padding: 20px;
+}
+
+.hotel-info h3 {
+  margin-top: 0;
+  font-size: 2em;
+  color: #333;
+}
+
+.hotel-info p {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  color: #666;
+}
+
+.hotel-info .fas {
+  margin-right: 5px;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  background-color: #f4511e;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #333;
+}
+
+/* Second Card Layout */
+.hotel-alt {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.hotel-alt img {
+  width: 40%;
+  object-fit: cover;
+}
+
+.hotel-alt .hotel-info {
+  padding: 20px;
+  width: 60%;
+}
+
+.hotel-alt .hotel-info h3 {
+  margin-top: 0;
+  font-size: 2em;
+  color: #333;
+}
+
+.hotel-alt .hotel-info p {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  color: #666;
+}
+
+.hotel-alt .hotel-info .fas {
+  margin-right: 5px;
+}
+
+.hotel-alt .btn {
+  margin-top: 10px;
+  background-color: #f4511e;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hotel-alt .btn:hover {
+  background-color: #333;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body h4 {
+  margin-top: 0;
+  font-size: 1.8em;
+  color: #333;
+}
+
+.card-body p {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  color: #666;
+}
+
+.card-body .fas {
+  margin-right: 5px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #f4511e;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #333;
+}
+
+/* CSS untuk footer */
+footer {
+    background-color: #333;
+    /* Warna latar belakang footer */
+    color: #fff;
+    /* Warna teks footer */
+    text-align: center;
+    /* Posisi teks ke tengah */
+    padding: 10px 0;
+    /* Padding atas dan bawah */
+    bottom: 0;
+    /* Letakkan di bagian bawah */
+    width: 100%;
+    /* Lebar penuh */
+    font-style: italic;
+    overflow: hidden;
+  }
+  
+  .fleft {
+    float: left;
+    margin-left: 20px;
+    color: #667;
+  }
+  
+  .fright {
+    float: right;
+    margin-right: 20px;
+    color: #667;
+  }
+  
+  .fright span {
+    color: white;
+  }

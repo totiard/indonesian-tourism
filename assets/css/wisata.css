@@ -1,0 +1,283 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+header {
+  background-color: #343a40;
+  color: #fff;
+  padding: 10px 0;
+}
+
+header h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: "Playwrite IT Moderna", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 40px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+  margin-top: 10px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.4s, background-color 0.4s;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #333;
+  background-color: #ffd700; /* tambahkan warna background saat hover */
+  border-radius: 4px; /* membuat sudut yang lebih halus */
+}
+
+main {
+  padding: 20px 0;
+}
+
+section {
+  padding: 20px 0;
+}
+
+section h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-body h4 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.card-body p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.card-body a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card-body a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+form .form-group {
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+form input[type="date"],
+form input[type="number"],
+form select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Gaya tambahan untuk formulir transaksi */
+#transaksiForm {
+  max-width: 600px; /* Lebar maksimum form agar tidak terlalu lebar */
+  margin: 0 auto; /* Posisi form di tengah */
+  padding: 20px;
+  background-color: #f8f9fa; /* Warna background form */
+  border: 1px solid #ddd; /* Border form */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk form */
+}
+
+#transaksiForm h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#transaksiForm p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#transaksiForm .form-group {
+  margin-bottom: 20px;
+}
+
+#transaksiForm label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#transaksiForm input[type="date"],
+#transaksiForm input[type="number"],
+#transaksiForm select {
+  width: 100%;
+  padding: 12px; /* Padding sedikit lebih besar */
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background-color: #fff; /* Warna background default */
+}
+
+.form-group1 {
+  margin-bottom: 20px;
+}
+
+.form-group1 label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#transaksi .form-group1 input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #c4b3b3; /* Warna background abu */
+}
+
+#transaksiForm button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  background-color: #007bff; /* Warna latar belakang tombol */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#transaksiForm button:hover {
+  background-color: #0056b3; /* Warna latar belakang tombol saat hover */
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+/* CSS untuk footer */
+footer {
+  background-color: #333;
+  /* Warna latar belakang footer */
+  color: #fff;
+  /* Warna teks footer */
+  text-align: center;
+  /* Posisi teks ke tengah */
+  padding: 10px 0;
+  /* Padding atas dan bawah */
+  bottom: 0;
+  /* Letakkan di bagian bawah */
+  width: 100%;
+  /* Lebar penuh */
+  font-style: italic;
+  overflow: hidden;
+}
+
+.fleft {
+  float: left;
+  margin-left: 20px;
+  color: #667;
+}
+
+.fright {
+  float: right;
+  margin-right: 20px;
+  color: #667;
+}
+
+.fright span {
+  color: white;
+}

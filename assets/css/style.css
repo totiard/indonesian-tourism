@@ -1,0 +1,350 @@
+/* CSS Dasar */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: #b34c11ad;
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin-top: 0;
+  font-family: "Playwrite IT Moderna", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 60px;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: backgroud-color 0.4s, color 0.4s;
+}
+
+nav a:hover {
+  color: white;
+  background-color: red;
+}
+
+main {
+  padding: 40px 0;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* CSS Hero */
+
+#hero {
+  background-image: url(https://images.tokopedia.net/img/KRMmCm/2022/6/22/c6fa942e-31b6-4a64-bd29-7599f47c9dc2.jpg);
+  background-color: #e0f2f1;
+  background-size: cover;
+  background-position: center 30%;
+  padding: 80px 0;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.hero-content a {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.3s;
+}
+
+/* CSS Section Kebudayaan, Tempat Wisata, dan Hotel */
+
+#kebudayaan,
+#tempatwisata,
+#hotel {
+  background-color: #fff;
+  padding: 40px 0;
+}
+
+#kebudayaan p,
+#tempatwisata p,
+#hotel p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#kebudayaan a,
+#tempatwisata a,
+#hotel a {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* CSS Testimoni */
+
+#testimoni {
+  background-color: #fff;
+  padding: 40px 0;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  margin-bottom: 40px;
+}
+
+.slide {
+  flex-shrink: 0;
+  width: 300px;
+  margin-right: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.slide p {
+  margin-bottom: 20px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.author img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.author span {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* CSS Responsif Testimoni */
+
+@media (max-width: 768px) {
+  #testimoni .slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #testimoni .slide {
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+  }
+}
+
+/* CSS Newsletter */
+
+#newsletter {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #f5f5f5;
+}
+
+#newsletter h2 {
+  margin-bottom: 20px;
+}
+
+#newsletter p {
+  margin-bottom: 20px;
+}
+
+#newsletter form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#newsletter input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+#newsletter .btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+/* CSS untuk footer */
+footer {
+  background-color: #333;
+  /* Warna latar belakang footer */
+  color: #fff;
+  /* Warna teks footer */
+  text-align: center;
+  /* Posisi teks ke tengah */
+  padding: 10px 0;
+  /* Padding atas dan bawah */
+  bottom: 0;
+  /* Letakkan di bagian bawah */
+  width: 100%;
+  /* Lebar penuh */
+  font-style: italic;
+  overflow: hidden;
+}
+
+.fleft {
+  float: left;
+  margin-left: 20px;
+  color: #667;
+}
+
+.fright {
+  float: right;
+  margin-right: 20px;
+  color: #667;
+}
+
+.fright span {
+  color: white;
+}
+
+/* CSS Responsif */
+
+@media (max-width: 768px) {
+  #hero .hero-content {
+    max-width: 100%;
+  }
+
+  #testimoni .slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #testimoni .slide {
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+  }
+
+  #newsletter form {
+    flex-direction: column;
+  }
+
+  #newsletter input[type="email"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #newsletter .btn {
+    width: 100%;
+  }
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #b34c11ad;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}

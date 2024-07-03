@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pemesanan Hotel</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/icon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/pesan-hotel.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Pesan Hotel Anda <br>Sekarang Juga</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <form id="bookingForm" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="hotel">Pilih Hotel:</label>
+                    <select id="hotel" name="hotel" required>
+                        <option value="" disabled selected>-- Pilih Hotel Anda --</option>
+                        <option value="Hotel Santika Premiere Bintaro|1050000">Hotel Santika Premiere Bintaro</option>
+                        <option value="Hotel Aryaduta Bogor|1200000">Hotel Aryaduta Bogor</option>
+                        <option value="Hotel Mulia Senayan|2500000">Hotel Mulia Senayan</option>
+                        <option value="Hotel Grand Hyatt Jakarta|2000000">Hotel Grand Hyatt Jakarta</option>
+                        <option value="Hotel Sheraton Grand Jakarta|2800000">Hotel Sheraton Grand Jakarta</option>
+                        <option value="Hotel JW Marriott Bali|3500000">Hotel JW Marriott Bali</option>
+                        <option value="Hotel Four Seasons Jakarta|4000000">Hotel Four Seasons Jakarta/option>
+                        <option value="Hotel Ritz Carlton Jakarta|3200000">Hotel Ritz Carlton Jakarta</option>
+                        <option value="Hotel Shangri-La Jakarta|3800000">Hotel Shangri-La Jakarta</option>
+                        <option value="Hotel Raffles Jakarta|3500000">Hotel Raffles Jakarta</option>
+                        <option value="Hotel The Hermitage Jakarta|2700000">Hotel The Hermitage Jakarta</option>
+                        <option value="Hotel Intercontinental Jakarta|2900000">Hotel Intercontinental Jakarta</option>
+                        <option value="Hotel Grand Kemang|520000">Hotel Grand Kemang</option>
+                        <option value="Hotel The Rich Yogyakarta|450000">Hotel The Rich Yogyakarta</option>
+                        <option value="Hotel BIGLAND & Convention Sentul|560000">Hotel BIGLAND & Convention Sentul
+                        </option>
+                        <option value="Hotel Janévalla Bandung|450000">Hotel Janévalla Bandung</option>
+                        <option value="Hotel Lorin Syariah Solo|350000">Hotel Lorin Syariah Solo</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="checkInDate">Tanggal Check-in:</label>
+                    <input type="date" id="checkInDate" name="checkInDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkOutDate">Tanggal Check-out:</label>
+                    <input type="date" id="checkOutDate" name="checkOutDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="roomCount">Jumlah Kamar:</label>
+                    <input type="number" id="roomCount" name="roomCount" min="1" value="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">No Telepon:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10,}" required>
+                    <small><i>Format: Minimal 10 digit angka tanpa spasi atau tanda</i></small>
+                </div>
+                <button type="submit">Pesan Sekarang</button>
+            </form>
+        </div>
+
+        <div id="booking-details" class="container">
+            <!-- Detail pemesanan akan ditampilkan di sini -->
+        </div>
+
+        <div class="qris">
+            <h3>QRIS Pembayaran</h3>
+            <h4><i>Silahkan Scan untuk Melakukan Pembayaran !</i></h4>
+            <img id="qrisImage" src="" alt="QRIS">
+        </div>
+
+        <div id="paymentProofInfo" class="payment-proof">
+            <!-- Informasi bukti pembayaran akan ditampilkan di sini -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="fleft">© 2024 Indonesian Tourism. All rights reserved.</p>
+            <p class="fright">Develop by <span>Toti Ardiansyah</span></p>
+        </div>
+    </footer>
+
+    <script src="/assets/js/pesan-hotel.js"></script>
+
+</body>
+
+</html>

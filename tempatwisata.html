@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tempat Wisata Terbaik di Indonesia</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/icon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/wisata.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Tempat Wisata Terbaik di Indonesia</h1>
+            <nav>
+                <ul>
+                    <li><a href="#wisata">Tempat Wisata</a></li>
+                    <li><a href="#transaksi">Tiket</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="wisata">
+            <div class="container">
+                <h2>Jelajahi Keindahan Alam dan Budaya Indonesia</h2>
+                <p>
+                    Indonesia memiliki kekayaan alam dan budaya yang luar biasa, dengan
+                    berbagai tempat wisata yang menarik untuk dikunjungi. Dari pantai
+                    yang indah, gunung yang megah, hingga situs budaya yang bersejarah,
+                    Indonesia menawarkan pengalaman wisata yang tak terlupakan. <br><br>
+                </p>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="/assets/img/pantai-lot.avif" alt="Gambar Pantai Tanah Lot" />
+                            <div class="card-body">
+                                <h4>Pantai Tanah Lot</h4>
+                                <p>
+                                    Terletak di Bali, Pantai Tanah Lot terkenal dengan pura yang
+                                    berdiri di atas batu karang di tengah laut. Pemandangan
+                                    matahari terbenam di sini sangatlah indah.
+                                </p>
+                                <a href="https://www.indonesia.travel/id/id/destinasi/bali-nusa-tenggara/tanah-lot.html"
+                                    target="_blank">Pelajari Lebih Lanjut</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="/assets/img/gunung-bromo.avif" alt="Gambar Gunung Bromo" />
+                            <div class="card-body">
+                                <h4>Gunung Bromo</h4>
+                                <p>
+                                    Terletak di Jawa Timur, Gunung Bromo terkenal dengan lautan
+                                    pasirnya yang luas dan pemandangan matahari terbit yang
+                                    menakjubkan.
+                                </p>
+                                <a href="https://www.indonesia.travel/id/id/destinasi/java/taman-nasional-bromo-tengger-semeru.html"
+                                    target="_blank">Pelajari Lebih Lanjut</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="/assets/img/candi-borobudur.jpg" alt="Gambar Candi Borobudur" />
+                            <div class="card-body">
+                                <h4>Candi Borobudur</h4>
+                                <p>
+                                    Terletak di Jawa Tengah, Candi Borobudur adalah candi Buddha
+                                    terbesar di dunia dan merupakan salah satu Situs Warisan
+                                    Dunia UNESCO.
+                                </p>
+                                <a href="https://borobudurpark.com/temple/borobudur/" target="_blank">Pelajari Lebih
+                                    Lanjut</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="https://www.tokopedia.com/blog/keindahan-alam-indonesia-tvl/?utm_source=google&utm_medium=organic"
+                    class="btn btn-primary">Lihat Lebih Banyak</a>
+            </div>
+        </section>
+
+        <section id="transaksi">
+            <div class="container">
+                <h2>Pesan Tiket Wisata Anda</h2>
+                <p>
+                    Pesan tiket wisata Anda dengan mudah dan aman melalui situs web ini.
+                    Kami menyediakan berbagai pilihan tempat wisata terbaik di Indonesia
+                    dengan harga yang kompetitif. <br><br>
+                </p>
+
+                <form id="transaksiForm">
+                    <div class="form-group">
+                        <label for="tempatWisata">Tempat Wisata</label>
+                        <select id="tempatWisata" name="tempatWisata" class="form-control">
+                            <option value="">Pilih Tempat Wisata</option>
+                            <option value="pantai-tanah-lot" data-price="100000">
+                                Pantai Tanah Lot - Rp 100,000
+                            </option>
+                            <option value="gunung-bromo" data-price="150000">
+                                Gunung Bromo - Rp 150,000
+                            </option>
+                            <option value="candi-borobudur" data-price="75000">
+                                Candi Borobudur - Rp 75,000
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tanggalKunjungan">Tanggal Kunjungan</label>
+                        <input type="date" id="tanggalKunjungan" name="tanggalKunjungan" class="form-control"
+                            required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="jumlahPengunjung">Jumlah Pengunjung</label>
+                        <input type="number" min="1" id="jumlahPengunjung" name="jumlahPengunjung" class="form-control"
+                            required />
+                    </div>
+
+                    <div class="form-group1">
+                        <label for="totalHarga">Total Harga Tiket</label>
+                        <input type="number" id="totalHarga" name="totalHarga" class="form-control" readonly />
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Pesan Tiket</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="fleft">© 2024 Indonesian Tourism. All rights reserved.</p>
+        <p class="fright">Develop by <span>Toti Ardiansyah</span></p>
+    </footer>
+
+    <script src="/assets/js/wisata.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  color: #fff;
+}
+
+.btn {
+  background-color: #f4511e;
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 9px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+}
+
+header h1 {
+  font-family: "Playwrite IT Moderna", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 60px;
+  color: #fff;
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+  color: #fff;
+}
+
+nav ul li a:hover {
+  background-color: #f4511e;
+  color: #fff;
+}
+
+/* Section styles */
+section {
+  background-color: #fff;
+  padding: 40px 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+section h2 {
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+
+section p {
+  font-size: 1.1em;
+  line-height: 1.8;
+}
+
+/* Tarian section */
+#tarian ul li {
+  margin-bottom: 100px;
+}
+
+#tarian h3 {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+#tarian .image {
+  margin-top: 10px;
+}
+
+#tarian .image-caption {
+  margin-top: 5px;
+  font-style: italic;
+  color: #777;
+  font-size: 0.9em;
+}
+
+/* Tradisi section */
+#tradisi ul li {
+  margin-bottom: 90px;
+}
+
+#tradisi h3 {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+#tradisi .image {
+  margin-top: 10px;
+}
+
+#tradisi .image-caption {
+  margin-top: 5px;
+  font-style: italic;
+  color: #777;
+  font-size: 0.9em;
+}
+
+/* Upacara section */
+#upacara ul li {
+  margin-bottom: 90px;
+}
+
+#upacara h3 {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+#upacara .image {
+  margin-top: 10px;
+}
+
+#upacara .image-caption {
+  margin-top: 5px;
+  font-style: italic;
+  color: #777;
+  font-size: 0.9em;
+}
+
+.image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+.image-caption {
+  text-align: center;
+  font-style: italic;
+}
+
+/* CSS untuk footer */
+footer {
+  background-color: #333;
+  /* Warna latar belakang footer */
+  color: #fff;
+  /* Warna teks footer */
+  text-align: center;
+  /* Posisi teks ke tengah */
+  padding: 10px 0;
+  /* Padding atas dan bawah */
+  bottom: 0;
+  /* Letakkan di bagian bawah */
+  width: 100%;
+  /* Lebar penuh */
+  font-style: italic;
+  overflow: hidden;
+}
+
+.fleft {
+  float: left;
+  margin-left: 20px;
+  color: #667;
+}
+
+.fright {
+  float: right;
+  margin-right: 20px;
+  color: #667;
+}
+
+.fright span {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  section {
+    padding: 30px 10px;
+  }
+}
+
+iframe {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.video {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 20px auto; /* Mengatur margin atas dan bawah ke 20px dan sisi kiri dan kanan ke auto */
+  }
